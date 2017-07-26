@@ -17,7 +17,7 @@
 
 * git clone https://github.com/happyfarmergo/ZhihuCrawler.git
 * cd ZhihuCrawler
-* python Zhihu.py
+* python zhihu.py
 
 
 
