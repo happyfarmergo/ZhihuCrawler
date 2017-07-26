@@ -1,6 +1,8 @@
 import redis
 
-
+'''
+RedisUtil实际上合并了Redis Set和Redis List的操作
+'''
 class RedisUtil:
     def __init__(self, host, port, namespace):
         self.__connection_pool = redis.ConnectionPool(host=host, port=port)
