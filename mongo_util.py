@@ -10,19 +10,3 @@ class Mongo:
 
     def save_user(self, userinfo):
         self.db.user.insert(userinfo)
-
-    def save_comments(self, comments):
-        if len(comments) == 0:
-            return
-        self.db.comment.insert_many(comments)
-
-    def set_song(self, sid, attrs):
-        self.db.song.update_one({'id': sid}, {'$set' : attrs})
-
-    def save_playlist(self, list):
-        self.db.playlist.insert(list)
-
-    def save_songs(self, songs):
-        if len(songs) == 0:
-            return
-        self.db.song.insert_many(songs)
